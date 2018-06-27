@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 27
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "edu.sfsu.cs.orange.ocr"
+        minSdkVersion 16
+        targetSdkVersion 27
+        //minSdkVersion 24
+        //targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            //minifyEnabled true
+            //proguardFiles 'proguard.cfg'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-database:12.0.0'
+    implementation 'com.google.firebase:firebase-auth:12.0.0'
+//    implementation 'com.google.firebase:firebase-storage:11.8.0'
+    compile 'com.rmtheis:tess-two:6.0.4'
+    compile files('libs/google-api-translate-java-0.98-mod2.jar')
+    compile files('libs/json_simple-1.1.jar')
+    compile files('libs/jtar-1.0.4.jar')
+    compile files('libs/microsoft-translator-java-api-0.6-mod.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    //compile 'com.google.firebase:firebase-core:16.0.0'
+    compile 'com.google.firebase:firebase-core:12.0.0'
+    compile 'com.google.firebase:firebase-auth:12.0.0'
+    // recycler view
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    // glide image library
+    implementation 'com.github.bumptech.glide:glide:4.3.1'
+    // volley http library
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    compile 'com.google.android.gms:play-services-auth:12.0.0'
+}
+apply plugin: 'com.google.gms.google-services'

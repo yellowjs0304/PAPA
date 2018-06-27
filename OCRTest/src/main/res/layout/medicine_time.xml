@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/RESULT"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="PAPA 알림"
+        android:textColor="#ffff"
+        android:textSize="12pt" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="450dp"
+        android:layout_height="369dp"
+        android:layout_gravity="center"
+        android:src="@drawable/medicine" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="약 드실 시간입니다!"
+        android:textSize="14pt" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="140dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="확인"
+            android:textColor="#ffff"
+            android:textSize="9pt" />
+    </LinearLayout>
+
+</LinearLayout>

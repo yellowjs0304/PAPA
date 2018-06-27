@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="약품검색!"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/SearchView"
+        android:layout_width="208dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/rectangle_background"
+        android:text=" Search..." />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignEnd="@+id/SearchView"
+        android:layout_alignTop="@+id/SearchView"
+        android:background="#00000000"
+        android:drawableTop="@drawable/ic_search_deepgray_24dp" />
+
+    <Button
+        android:id="@+id/camara_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/SearchView"
+        android:layout_toStartOf="@+id/search_button"
+        android:background="#00000000"
+        android:drawableTop="@drawable/ic_photo_camera_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="457dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="" />
+
+</RelativeLayout>

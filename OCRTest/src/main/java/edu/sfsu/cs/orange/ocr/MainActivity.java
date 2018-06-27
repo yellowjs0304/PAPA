@@ -1,0 +1,65 @@
+package edu.sfsu.cs.orange.ocr;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
+import android.view.View;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+        //BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        //bottomNav.setOnNavigationItemSelectedListener(navListener);
+
+        //I added this if statement to keep the selected fragment when rotating the device
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new HomeFragment()).commit();
+        }
+    }
+
+    public void onButton1Clicked(View v) {
+        //      Toast.makeText(this,"버튼이 눌렸어요.",Toast.LENGTH_LONG).show();
+
+        // Intent intent = new Intent(this, MenuActivity.class);//
+        // startActivity(intent);
+
+        Intent intent2 = new Intent(this, LoginActivity.class);//
+        startActivity(intent2);
+    }
+//    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+//            new BottomNavigationView.OnNavigationItemSelectedListener() {
+//                @Override
+//                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                    Fragment selectedFragment = null;
+//
+//                    switch (item.getItemId()) {
+//                        case R.id.navigation_home:
+//                            selectedFragment = new HomeFragment();
+//                            break;
+////                        case R.id.navigation_search:
+////                            selectedFragment = new SearchFragment();
+////                            break;
+//                        case R.id.navigation_favorites:
+//                            selectedFragment = new FavoritesFragment();
+//                            break;
+//                        case R.id.navigation_mypages:
+//                            selectedFragment=new MypagesFragment();
+//                            break;
+//                    }
+//
+//                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+//                            selectedFragment).commit();
+//
+//                    return true;
+//                }
+//            };
+
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="처방전 등록"
+        android:textColor="#ffff"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/Presc_name"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:hint="진단명"
+        android:textColorHighlight="#595959" />
+
+    <EditText
+        android:id="@+id/Presc_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint= "진단날짜"
+        android:inputType="time" />
+
+    <ListView
+        android:id="@+id/drug_list"
+        android:layout_width="wrap_content"
+        android:layout_height="374dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="82dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="확인"
+        android:textColor="#ffff"
+        android:textSize="9pt" />
+
+</LinearLayout>
+
+

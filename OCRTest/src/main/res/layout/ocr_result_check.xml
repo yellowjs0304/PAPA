@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff">
+
+
+        <TextView
+            android:id="@+id/RESULT"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="처방전 인식 결과"
+            android:textColor="#ffff"
+            android:textSize="12pt" />
+
+    <ListView
+        android:id="@+id/medicine_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="443dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:text="추가적인 약품 등록은 검색을 통해 등록"
+        android:textColor="#000000"
+        android:textSize="9pt" />
+
+    <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="82dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="확인"
+            android:textColor="#ffff"
+            android:textSize="9pt" />
+
+</LinearLayout>

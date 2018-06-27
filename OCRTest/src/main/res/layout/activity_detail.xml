@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/dthumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            android:layout_below="@id/dname"/>
+
+        <TextView
+            android:id="@+id/dname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/contact_name"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/dphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dthumbnail"
+            android:layout_centerHorizontal="true"
+            android:textColor="#656565"
+            android:textSize="25sp" />
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Dnumber"
+            android:layout_below="@id/dthumbnail"
+            android:textColor="@color/contact_name"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            />-->
+
+        <TextView
+            android:id="@+id/dprotitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dphone"
+            android:layout_centerHorizontal="true"
+            android:text="효능 효과"
+            android:textColor="@color/contact_name"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dpro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dprotitle"
+            android:scrollbars="vertical"
+            android:text="효능 효과2"
+            android:textColor="@color/contact_name"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dusagetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dpro"
+            android:layout_centerHorizontal="true"
+            android:text="용법 용량"
+            android:textColor="@color/contact_name"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dusage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dusagetitle"
+            android:text="용법 용량2"
+            android:textColor="@color/contact_name"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/dcautiontitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dusage"
+            android:layout_centerHorizontal="true"
+            android:text="주의 사항"
+            android:textColor="@color/contact_name"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dcaution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dcautiontitle"
+            android:text="주의 사항2"
+            android:textColor="@color/contact_name"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/addMedicineBtn"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="13dp"
+            android:gravity="right"
+            android:text="추가"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
+</ScrollView>
