@@ -3,3 +3,5 @@ by. Kwon SinYeong, Hong Jimin, Hwang Jisu
 
 [VIDEO]
 https://www.youtube.com/watch?v=O6UXFotvA4M 
+
+This Project used https://github.com/rmtheis/android-ocr
