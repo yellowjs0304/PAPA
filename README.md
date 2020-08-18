@@ -1,7 +1,9 @@
-Capstone Project(KGU)- PAPA(Prescription Aid Protect Anyone)
+### Capstone Project(KGU)- PAPA(Prescription Aid Protect Anyone)
 by. Kwon Sinyeong, Hong Jimin, Hwang Jisu
+---------------------
 
-[VIDEO]
-https://www.youtube.com/watch?v=O6UXFotvA4M 
+## Team
+*[Hwang Jisu](https://github.com/yellowjs0304)
 
-This Project used https://github.com/rmtheis/android-ocr
+[[VIDEO](https://www.youtube.com/watch?v=O6UXFotvA4M)]   
+This Project used [[android-ocr](https://github.com/rmtheis/android-ocr)]
