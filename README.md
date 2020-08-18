@@ -6,5 +6,5 @@ This Project used [[android-ocr](https://github.com/rmtheis/android-ocr)]
 
 ## Team
 * [Hwang Jisu](https://github.com/yellowjs0304)
-* Hong Jimin
+* Hong Jimin(https://github.com/hong808)
 * Kwon Sinyeong   
